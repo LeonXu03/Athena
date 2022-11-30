@@ -1,10 +1,15 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import LoginPage from "./Pages/LoginPage";
 
 function App() {
   return (
-    <div className="App">
-      zz
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<div>Email</div>} />
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
+    </Router>
   );
 }
 

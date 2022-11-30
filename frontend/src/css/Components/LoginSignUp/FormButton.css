@@ -1,0 +1,16 @@
+button:hover {
+  filter: brightness(90%);
+  cursor: pointer;
+}
+
+.form-button-submit {
+  background: linear-gradient(90deg, #511b38 2.08%, #281648 100%);
+  border-radius: 40px;
+  color: white;
+  width: 80%;
+  padding: 0.8em;
+  font-size: 0.8em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border: none;
+}

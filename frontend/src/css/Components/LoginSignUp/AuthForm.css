@@ -1,0 +1,41 @@
+.auth-form-background {
+  display: flex;
+  width: 24em;
+  height: 36em;
+  border-radius: 15px;
+  background-color: white;
+  align-items: center;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.auth-form-header {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: 0.6em;
+}
+
+.auth-form-redirect-text {
+  font-size: 0.8em;
+  width: 80%;
+  color: #494949;
+}
+
+.auth-form-alternate-auth-container {
+  display: inline-flex;
+  background-color: white;
+  border: none;
+  align-items: center;
+  box-shadow: rgb(0 0 0 / 20%) 1px 1px 5px 0px !important;
+  width: 80%;
+  font-family: inherit;
+  padding: 0.5em;
+  color: #494949;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.auth-form-alternate-auth-text {
+  width: 100%;
+}
