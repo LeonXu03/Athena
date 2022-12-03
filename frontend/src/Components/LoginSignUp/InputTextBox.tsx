@@ -8,27 +8,30 @@ export default function InputTextBox({
   state,
   setState,
 }: {
-  input: "Email" | "Password" | "Confirm Password";
+  input: "email" | "password" | "confirmPassword";
   state: String;
   setState: Dispatch<SetStateAction<String>>;
 }) {
-  const placeholder = `Enter ${input.toLowerCase()} here`;
+  const placeholder =
+    input === "confirmPassword"
+      ? `Confirm password here`
+      : `Enter ${input.toLowerCase()} here`;
   const icons = {
-    Email: (
+    email: (
       <HiOutlineMail
         color={"#ACACAC"}
         size={17}
         style={{ marginRight: "1.5em", padding: "0px" }}
       />
     ),
-    Password: (
+    password: (
       <HiOutlineLockClosed
         color={"#ACACAC"}
         size={17}
         style={{ marginRight: "1.5em", padding: "0px" }}
       />
     ),
-    "Confirm Password": (
+    confirmPassword: (
       <HiOutlineLockClosed
         color={"#ACACAC"}
         size={17}
@@ -43,14 +46,20 @@ export default function InputTextBox({
 
   return (
     <div className="input-box-container">
-      <h4 className="input-box-header">{input}</h4>
+      <h4 className="input-box-header">
+        {input === "email"
+          ? "Login"
+          : input === "password"
+          ? "Password"
+          : "Confirm Password"}
+      </h4>
       <div className="input-box-input-field-container">
         {!state && icons[input]}
         <input
           className="input-box-input-field-text"
           placeholder={placeholder}
           onChange={(event) => handleText(event)}
-          type={input !== "Email" ? "password" : "text"}
+          type={input !== "email" ? "password" : "text"}
         ></input>
       </div>
       <div
