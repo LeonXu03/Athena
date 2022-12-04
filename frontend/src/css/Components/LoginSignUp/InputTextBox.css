@@ -1,0 +1,33 @@
+.input-box-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.input-box-header {
+  font-size: 1em;
+  color: hsl(0, 0%, 29%);
+  margin: 0 0 1em 0;
+}
+
+.input-box-input-field-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.input-box-input-field-text {
+  border: none;
+  color: #494949;
+  font-size: 0.9em;
+  font-family: inherit;
+  padding: 0px;
+}
+
+.input-box-input-field-text:focus {
+  outline-width: 0;
+}
+
+::placeholder {
+  color: #acacac;
+}

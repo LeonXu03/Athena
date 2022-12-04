@@ -9,10 +9,10 @@
 
 > #### \Components
 >
-> > \common \*\*Frequently used components, camelCase all components
+> > \common \*\*Frequently used components, PascalCase all components
 > >
-> > > createButton.tsx
-> > > ticketPresentational.tsx
+> > > CreateButton.tsx
+> > > TicketPresentational.tsx
 > > > etc..
 
 > > \home \*\* Each page will have their own specific components
