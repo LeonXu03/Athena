@@ -24,4 +24,4 @@ Trunk based development. DO NOT directly push to main branch. Create a branch an
 
 ## Start Athena
 
-1. To setup MySQL database: `go run main.go`
+1. To setup MySQL database: cd into `backend` and `go run seeds.go`
