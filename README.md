@@ -17,6 +17,9 @@ Trunk based development. DO NOT directly push to main branch. Create a branch an
    a. Please set your mySQL root password to `xxxx` during setup
 
 2. Install node and npm via nvm version manager (https://github.com/coreybutler/nvm-windows)
+
+   a. For stable build, try node 16.13.2
+
 3. Install Go (https://go.dev/doc/install)
 
 ## Start Athena
