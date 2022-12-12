@@ -50,7 +50,7 @@ func createBasicTables(athenaDB *sql.DB) error {
 	log.Print("Creating user table")
 
 	query := `CREATE TABLE IF NOT EXISTS user(
-		id BINARY(16) PRIMARY KEY,
+		id VARCHAR(36) PRIMARY KEY,
 		firstName VARCHAR(100) NOT NULL,
 		lastName VARCHAR(100) NOT NULL,
 		fullName VARCHAR(100) NOT NULL,

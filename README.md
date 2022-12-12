@@ -21,6 +21,7 @@ Trunk based development. DO NOT directly push to main branch. Create a branch an
    a. For stable build, try node 16.13.2
 
 3. Install Go (https://go.dev/doc/install)
+4. Install and create Postman account (for API testing)
 
 ## Start Athena
 

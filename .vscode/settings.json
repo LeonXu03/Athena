@@ -3,5 +3,9 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[go]": {
     "editor.defaultFormatter": "golang.go"
+  },
+  "git.ignoreLimitWarning": true,
+  "[go.mod]": {
+    "editor.defaultFormatter": "golang.go"
   }
 }
