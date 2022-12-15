@@ -92,7 +92,13 @@ export default function AuthForm({
           </div>
           <button
             className="auth-form-button-submit"
-            onClick={() => handleUserSignUp(email, password, confirmPassword)}
+            onClick={() =>
+              handleUserSignUp({
+                email: email,
+                password: password,
+                confirmPassword: confirmPassword,
+              })
+            }
           >
             SIGN UP
           </button>

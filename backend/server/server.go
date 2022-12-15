@@ -4,5 +4,5 @@ func Start() {
 	router := startRouter()
 
 	// Start listening and serving requests
-	router.Run(":8080")
+	router.Run(":8100")
 }
