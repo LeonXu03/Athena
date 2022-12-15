@@ -1,8 +1,3 @@
-import fetch from "node-fetch";
-
-{
-}
-
 export default async function handleUserSignUp(signUpStruct: {
   email: String;
   password: String;
