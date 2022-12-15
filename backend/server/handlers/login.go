@@ -1,4 +1,4 @@
-package server
+package handlers
 
 import (
 	"Athena/backend/model"
@@ -7,14 +7,14 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func login(ctx *gin.Context) {
+func LoginHandler(ctx *gin.Context) {
 	user := new(model.User)
 	if err := ctx.Bind(user); err != nil {
 		ctx.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"err": err.Error()})
 		return
 	}
 	for _, u := range model.Users {
-		if u.Username == user.Username && u.Password == user.Password {
+		if u.Email == user.Email && u.Password == user.Password {
 			ctx.JSON(http.StatusOK, gin.H{
 				"msg": "Signed in successfully.",
 				"jwt": "123456789",

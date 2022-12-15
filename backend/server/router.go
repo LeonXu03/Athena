@@ -1,6 +1,7 @@
 package server
 
 import (
+	"Athena/backend/server/handlers"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -15,11 +16,11 @@ func startRouter() *gin.Engine {
 	router.RedirectTrailingSlash = true
 
 	// Create API route group
-	api := router.Group("")
+	api := router.Group("/api")
 	{
 		// Add /hello GET route to router and define route handler function
-		api.POST("/sign-up", signUp)
-		api.POST("/login", login)
+		api.POST("/sign-up", handlers.SignupHandler)
+		api.POST("/login", handlers.LoginHandler)
 
 	}
 
