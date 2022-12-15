@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "http-proxy-middleware": "^2.0.6",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.6.2"
+  }
+}

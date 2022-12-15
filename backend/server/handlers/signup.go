@@ -1,4 +1,4 @@
-package server
+package handlers
 
 import (
 	"Athena/backend/model"
@@ -7,7 +7,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func signUp(ctx *gin.Context) {
+func SignupHandler(ctx *gin.Context) {
 	user := new(model.User)
 	if err := ctx.Bind(user); err != nil {
 		ctx.AbortWithStatusJSON(http.StatusBadRequest, gin.H{"err": err.Error()})

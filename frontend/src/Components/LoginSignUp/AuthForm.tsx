@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import InputTextBox from "./InputTextBox";
 import "../../css/Components/LoginSignUp/AuthForm.css";
+import handleUserSignUp from "../../Hooks/handleUserSignUp";
 
 export default function AuthForm({
   authType,
@@ -89,7 +90,12 @@ export default function AuthForm({
               setState={setConfirmPassword}
             />
           </div>
-          <button className="auth-form-button-submit"> SIGN UP </button>
+          <button
+            className="auth-form-button-submit"
+            onClick={() => handleUserSignUp(email, password, confirmPassword)}
+          >
+            SIGN UP
+          </button>
           <div
             className="auth-form-redirect-text"
             style={{ textAlign: "center", marginBottom: "1em" }}

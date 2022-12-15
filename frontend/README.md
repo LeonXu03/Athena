@@ -39,6 +39,11 @@
 
 > #### \Assets \*\*Images, icons, etc.. if needed
 
+### `install npm dependencies`
+
+1. `npm install node-fetch@2.6.7`
+1. `npm install --save-dev @types/node-fetch@2.x`
+
 ### `npm start`
 
 Runs the app in the development mode.\
