@@ -113,7 +113,7 @@ export default function AuthForm({
             style={{ textAlign: "center" }}
             onClick={() => navigate("/login")}
           >
-            Already have an account? {/* links to sign-up page */}
+            Already have an account? {/* links to sign-up page  */}
           </button>
         </>
       )}
