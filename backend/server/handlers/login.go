@@ -14,7 +14,7 @@ func LoginHandler(ctx *gin.Context) {
 		return
 	}
 	for _, u := range model.Users {
-		if u.Email == user.Email && u.Password == user.Password {
+		if u.Username == user.Username && u.Password == user.Password {
 			ctx.JSON(http.StatusOK, gin.H{
 				"msg": "Signed in successfully.",
 				"jwt": "123456789",

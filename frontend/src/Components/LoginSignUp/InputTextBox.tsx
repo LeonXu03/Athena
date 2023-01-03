@@ -48,7 +48,7 @@ export default function InputTextBox({
     <div className="input-box-container">
       <h4 className="input-box-header">
         {input === "email"
-          ? "Email"
+          ? "Login"
           : input === "password"
           ? "Password"
           : "Confirm Password"}
