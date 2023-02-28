@@ -1,0 +1,98 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header {
+    display:flex;
+    font-family: 'K2D', sans-serif;
+    font-weight: bold;
+    color: white;
+    padding-left: 70px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.sprint{
+    display:flex;
+    background-color: rgba(131, 116, 140, 0.2);
+    font-family: 'K2D', sans-serif;
+    margin-left: 20px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.text {
+    display: flex;
+    font-family: 'K2D', sans-serif;
+    color: rgba(131, 116, 140, 1);
+    margin-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.text:hover {
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 225px;
+    background-color: rgba(131, 116, 140, 0.2);
+    margin-left: 20px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.settings {
+    display: flex;
+    font-family: 'K2D', sans-serif;
+    color: rgba(131, 116, 140, 1);
+    margin-left: 40px;
+    margin-top: 480px;
+    margin-bottom: 20px;
+    border-top: 0.01px solid white;
+    border-bottom: 0.01px solid white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 125px;
+}
+
+
+.material-icons {
+    color:white;
+    margin-right:10px;
+    margin-left: -20px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    margin-right:10px;
+    margin-left: -50px;
+    margin-top: -3px
+}
+
+.bar {
+    height: 100%;
+    width: 16.66%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    background-image: linear-gradient(rgba(40, 22, 72, 1),rgba(81, 27, 56, 1));
+}
+
+.remove_effect{
+    text-decoration: none;
+    color: rgba(131, 116, 140, 1);
+}
+
+.remove_effect:hover{
+    color: white;
+    cursor: pointer;
+}
